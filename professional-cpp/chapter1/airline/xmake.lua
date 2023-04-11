@@ -1,7 +1,7 @@
 add_rules("mode.debug", "mode.release")
 set_config("sdk", "/opt/homebrew/opt/llvm")
 set_languages("c++2a")
-target("test1")
+target("airline")
     set_kind("binary")
     add_files("src/*.cpp", "src/*.cppm")
     set_toolchains("llvm")
