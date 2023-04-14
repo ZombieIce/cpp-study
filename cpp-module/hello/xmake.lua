@@ -1,10 +1,10 @@
 add_rules("mode.debug", "mode.release")
 set_config("sdk", "/opt/homebrew/opt/llvm")
-set_languages("c++20")
-target("test1")
+set_languages("c++2a")
+target("hello")
     set_kind("binary")
     add_files("src/*.cpp", "src/*.cppm")
-    set_toolchains("llvm")
+    add_toolchains("llvm")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io

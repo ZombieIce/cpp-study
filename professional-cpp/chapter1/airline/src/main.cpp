@@ -1,13 +1,11 @@
 #include <iostream>
-import A;
-
-using namespace std;
-
+import airline_ticket;
 int main(int argc, char** argv)
 {
-    auto sec1 = getSecret();
-    using secretType = decltype(getSecret());
-    secretType sec3{2};
-    cout << sec3._a << endl;
+    AirlineTicket myTicket;
+    myTicket.setPassengerName("Sherman T.");
+    myTicket.setNumberOfMiles(700);
+    double cost { myTicket.calculatePriceInDollars() };
+    std::cout << "This ticket will cost $" << cost << std::endl;
     return 0;
 }
